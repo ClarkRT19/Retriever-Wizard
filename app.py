@@ -1,11 +1,3 @@
-# app.py — Retriever (EN) with Step 7 (stacked) + Step 8 (UMAP)
-# Cosine by default (IndexFlatIP + normalization) with UI toggle for L2.
-# Robust column handling, contiguous arrays for FAISS, multi-root scanning,
-# metadata column picker, cosine metrics, image display, status/progress, checkpointing.
-# NEW:
-#  - Step 7: Stacked nearest neighbors (vertical list in ranked order)
-#  - Step 8: UMAP projection (filtered set + query image; color-coded: green/yellow/red)
-
 import os, json, csv, traceback, math, random
 from pathlib import Path
 from typing import Optional, Tuple, List, Dict, Set
@@ -34,7 +26,6 @@ try:
     _has_plotly = True
 except Exception:
     _has_plotly = False
-
 
 # ========== Optional UMAP ==========
 _umap_ok = False
@@ -1576,3 +1567,4 @@ elif st.session_state["step"] == 8:
     nav = st.columns(2)
     nav[0].button("⬅️ Back", on_click=lambda: st.session_state.update(step=7))
     nav[1].button("🔁 Recompute", on_click=lambda: st.session_state.update(step=8))
+
