@@ -1,5 +1,5 @@
 # 🧙‍♂️ Retriever Wizard
-A simple tool to visualize images using premade embeddings and metadata.
+A simple tool to visualize images using premade embeddings and metadata, incl. a small testset of 1000 images. 
 
 ## Overview
 Retriever Wizard is a Streamlit app for AI-based exploration of large image collections. It compares images by using visual similarity ( with precomputed embeddings) and provides fast nearest-neighbor search, ranked inspection, and simple 2D projections (UMAP or t-SNE). Typical uses include:
@@ -21,6 +21,9 @@ It is developed for cross-institutional analysis of educational wall charts, but
 - Image display: multiple backends (Streamlit path, imageio, OpenCV, PIL, raw bytes)
 - Checkpointing: save/load app state
 
+## Trying it out
+The app.py is naturally set up to run the testset in the Examples folder, try out the testset or change embeddings, metadata and images to your own. 
+**Important notes**: The column: *filename* is central to the code and is what FAISS indexes the images after, and is the link between metadata, images and embeddings. All image-names must be different, and you can't use the same named columns. 
 
 ## Installation (Windows)
 ```bash
