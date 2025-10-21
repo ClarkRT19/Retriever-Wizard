@@ -1,0 +1,10 @@
+streamlit
+pandas
+numpy
+plotly
+faiss-cpu
+umap-learn
+scikit-learn
+imageio
+pillow
+opencv-python
