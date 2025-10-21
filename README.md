@@ -33,3 +33,9 @@ py -3.12 -m venv .venv
 pip install -r requirements.txt
 # If needed:
 pip install faiss-cpu umap-learn scikit-learn plotly imageio pillow opencv-python
+```
+
+Run:
+```bash
+streamlit run app.py
+```
