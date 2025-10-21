@@ -38,7 +38,7 @@ pip install -r requirements.txt
 pip install faiss-cpu umap-learn scikit-learn plotly imageio pillow opencv-python
 ```
 
-Run:
+## Running Retriever Wizard:
 ```bash
 streamlit run app.py
 ```
