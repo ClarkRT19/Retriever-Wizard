@@ -62,8 +62,8 @@ CHUNK = 1000  # flush frequency for index writing
 def _ensure_state():
     ss = st.session_state
     ss.setdefault("step", 1)  # 1..8
-    ss.setdefault("meta_path",   str(Path("examples/metadata_example.csv").resolve()))
-    ss.setdefault("embed_path",  str(Path("examples/embeddings_example.csv").resolve()))
+    ss.setdefault("meta_path",   str(Path("examples/metadata.csv").resolve()))
+    ss.setdefault("embed_path",  str(Path("examples/embeddings.csv").resolve()))
     ss.setdefault("images_root", str(Path("examples/images").resolve()))
     ss.setdefault("output_dir",  str(Path("examples/_index").resolve()))
     ss.setdefault("index_name", "index.csv")
@@ -1567,5 +1567,6 @@ elif st.session_state["step"] == 8:
     nav = st.columns(2)
     nav[0].button("⬅️ Back", on_click=lambda: st.session_state.update(step=7))
     nav[1].button("🔁 Recompute", on_click=lambda: st.session_state.update(step=8))
+
 
 
