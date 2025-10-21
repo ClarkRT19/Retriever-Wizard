@@ -1,5 +1,5 @@
 # 🧙‍♂️ Retriever Wizard
-A simple tool to visualize images using premade embeddings and metadata, incl. a small testset of 1000 images. 
+A simple tool to visualize images using premade embeddings and metadata, incl. a small testset of a 1000 images. 
 
 ## Overview
 Retriever Wizard is a Streamlit app for AI-based exploration of large image collections. It compares images by using visual similarity ( with precomputed embeddings) and provides fast nearest-neighbor search, ranked inspection, and simple 2D projections (UMAP or t-SNE). Typical uses include:
