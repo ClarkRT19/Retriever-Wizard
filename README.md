@@ -22,6 +22,11 @@ It is developed for cross-institutional analysis of educational wall charts and 
 - Image display: multiple backends (Streamlit path, imageio, OpenCV, PIL, raw bytes)
 - Checkpointing: save/load app state
 
+## Missing Features
+- Easier navigation between different steps
+- Maybe merging step 1-5, removing redundancy in validation premade data.
+  
+
 ## Trying it out
 The app.py is naturally set up to run the testset in the Examples folder, try out the testset or change embeddings, metadata and images to your own. 
 **Important notes**: The column: *filename* is central to the code and is what FAISS indexes the images after, and is the link between metadata, images and embeddings. All image-names must be different, and you can't use the same named columns. 
