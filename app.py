@@ -1376,7 +1376,7 @@ elif st.session_state["step"] == 7:
 # --------------------------------
 elif st.session_state["step"] == 8:
     st.markdown("**Step 8: Annotate (overlay, persistent)**")
-    st.info("Annoter værker med nye metadata-værdier i en separat overlay, der aldrig overskriver original metadata. Alt gemmes i output_dir/_overlay/<session>/.")
+    st.info("Annotate works with new metadata values in a separate overlay that doesn't overwrites the original metadata. Everything is saved in output_dir/_overlay/<session>/.")
 
     # Controls (namespaced keys)
     c0, c1, c2, c3 = st.columns([1,1,1,1])
@@ -1955,4 +1955,5 @@ elif st.session_state["step"] == 9:
     st.markdown("---")
     nav = st.columns(2)
     nav[0].button("⬅️ Back", on_click=lambda: st.session_state.update(step=8))
+
     nav[1].button("🔁 Recompute", on_click=lambda: st.session_state.update(step=9))
