@@ -48,3 +48,7 @@ pip install faiss-cpu umap-learn scikit-learn plotly imageio pillow opencv-pytho
 ```bash
 streamlit run app.py
 ```
+
+### Disclaimer
+Parts of this project were drafted or refactored with the assistance of large language models (ChatGPT/GPT-5). 
+All prompts/outputs were reviewed and validated by the maintainer.
