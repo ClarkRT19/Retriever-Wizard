@@ -24,7 +24,7 @@ It is developed for cross-institutional analysis of educational wall charts and 
 
 ## Missing Features
 - Easier navigation between different steps
-- Maybe merging step 1-5, removing redundancy in validation premade data.
+- Maybe merging step 1-5; removing the redundant checks in the validation of premade data.
   
 
 ## Trying it out
