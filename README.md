@@ -4,7 +4,7 @@ A simple tool to visualize images using premade embeddings and metadata, incl. a
 ## Overview
 Retriever Wizard is a Streamlit tool for AI-based exploration of large image collections. It compares images by using visual similarity (with precomputed embeddings) and provides fast nearest-neighbor search, ranked inspection, annotation marker, and simple 2D projections (UMAP or t-SNE). Typical uses include:
 - Exploring thematically similar images
-- Spotting gaps and inconsistencies in metada
+- Spotting gaps and inconsistencies in metadata
 - Annotating the images for metadata crossexamination 
 - Producing projection plots for research and reporting
 
