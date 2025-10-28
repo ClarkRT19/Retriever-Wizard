@@ -1,12 +1,3 @@
-# app.py — Retriever Wizard (EN) + Annotate Overlay + Export
-# Cosine by default (IndexFlatIP + normalization) with UI toggle for L2.
-# Robust column handling, contiguous arrays for FAISS, multi-root scanning,
-# metadata column picker, cosine metrics, image display, status/progress, checkpointing.
-# NEW:
-#  - Step 7: Stacked nearest neighbors (vertical list; toggle "Hide metadata" for grid)
-#  - Step 8: Annotate overlay (sessions/markers; per-image + batch; persistent)
-#  - Step 9: UMAP/t-SNE + Export (merge overlay -> new metadata CSV)
-
 import os, json, csv, traceback, math, random, hashlib
 from pathlib import Path
 from typing import Optional, Tuple, List, Dict, Set
@@ -1957,3 +1948,4 @@ elif st.session_state["step"] == 9:
     nav[0].button("⬅️ Back", on_click=lambda: st.session_state.update(step=8))
 
     nav[1].button("🔁 Recompute", on_click=lambda: st.session_state.update(step=9))
+
