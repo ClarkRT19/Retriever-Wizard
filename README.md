@@ -57,5 +57,5 @@ streamlit run ReWiz.py
 ```
 
 ### Disclaimer
-Parts of this project were drafted or refactored with the assistance of large language models (ChatGPT/GPT-5). 
+Parts of the code in this project were drafted or refactored with the assistance of large language models (ChatGPT/GPT-5). 
 All prompts/outputs were reviewed and validated by the maintainer.
