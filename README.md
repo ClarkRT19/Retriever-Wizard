@@ -11,7 +11,7 @@ What it helps with:
 - Annotate image-candidates for cross-examination
 - Make simple 2D projections (UMAP/t-SNE) for slides/reports
 
-## Tetset 
+## Test set 
 The included Examples folder contains a test set (1k images) from a larger collection of educational wall charts.
 - Original collection ownership: Danish School of Education (DPU), Aarhus University.
 - Image source: Digitized by The Royal Danish Library; the selected example images are free of copyright per: https://digitalesamlinger.kb.dk/images/billed/2010/okt/billeder/subject22066/da/
