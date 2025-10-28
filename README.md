@@ -51,7 +51,7 @@ pip install faiss-cpu umap-learn scikit-learn plotly imageio pillow opencv-pytho
 
 ## Running Retriever Wizard:
 ```bash
-streamlit run app.py
+streamlit run ReWiz.py
 ```
 
 ### Disclaimer
