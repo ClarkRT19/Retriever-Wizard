@@ -13,9 +13,9 @@ What it helps with:
 
 ## Tetset 
 The included Examples folder contains a test set (1k images) from a larger collection of educational wall charts.
-Ownership: Danish School of Education (DPU), Aarhus University.
-Source: Digitized by The Royal Danish Library; the selected example images are free of copyright - Hyperlink to source included in the metadata.csv.
-Research context: Processed during an ongoing PhD project. Embeddings were produced with google/siglip2-giant-opt-patch16-384.
+-Ownership: Danish School of Education (DPU), Aarhus University.
+-Source: Digitized by The Royal Danish Library; the selected example images are free of copyright - Hyperlink to source included in the metadata.csv.
+-Research context: Processed during an ongoing PhD project. Embeddings were produced with google/siglip2-giant-opt-patch16-384.
 
 ## Features
 - Metadata validation: checks for a `filename` column (auto-derives from alternatives if possible)
