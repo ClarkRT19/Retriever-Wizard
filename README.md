@@ -1,5 +1,5 @@
 # 🧙‍♂️ Retriever Wizard [WIP]
-A simple tool to visualize images using premade embeddings and metadata, incl. a small testset of a 1000 images. 
+A simple tool to visualize images using premade embeddings and metadata, incl. a small testset of a 1000 images.  
 
 ## Overview
 Retriever Wizard is a Streamlit tool for AI-based exploration of large image collections. It compares images by using visual similarity (with precomputed embeddings) and provides fast nearest-neighbor search, ranked inspection, annotation marker, and simple 2D projections (UMAP or t-SNE). Typical uses include:
@@ -9,6 +9,11 @@ Retriever Wizard is a Streamlit tool for AI-based exploration of large image col
 - Producing projection plots for research and reporting
 
 It is developed for cross-institutional analysis of educational wall charts and artworks, but applicable to any large-scale image dataset with embeddings.  
+
+## Tetset 
+The Images and Metadata used are part of a larger collection of Education Wallcharts, owned by DPU (The Danish School of Education) and Aarhus University. The digitized charts are publicly available from The Danish Royal Library and the images chosen as exampledata are free from copyright. 
+The Images and Metadata have been processed as part of a ongoing PhD project, where also the Embeddings have been produced as part of the project, the Embeddings have been made with: google/siglip2-giant-opt-patch16-384.[https://huggingface.co/google/siglip2-giant-opt-patch16-384]
+
 
 ## Features
 - Metadata validation: checks for a `filename` column (auto-derives from alternatives if possible)
