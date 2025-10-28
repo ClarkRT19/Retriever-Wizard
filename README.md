@@ -6,10 +6,10 @@ The primary use is an adaptive research tool, created for my analytical process.
 Retriever Wizard loads a metadata CSV and an embeddings CSV (CLIP/SigLIP/Vision Transformer-style). It builds a fast FAISS index for nearest-neighbour search, lets you rank and annotate results, and makes simple 2D projections for communication.
 
 What it helps with:
-- find visually similar charts (nearest neighbours)
-- inspect clusters and outliers
-- annotate candidates for cross-examination
-- make simple 2D projections (UMAP/t-SNE) for slides/reports
+- Find visually similar charts (nearest neighbours)
+- Inspecting similar images between different collections.
+- Annotate image-candidates for cross-examination
+- Make simple 2D projections (UMAP/t-SNE) for slides/reports
 
 ## Tetset 
 The included Examples folder contains a test set (1k images) from a larger collection of educational wall charts.
