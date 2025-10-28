@@ -21,12 +21,12 @@ The included Examples folder contains a test set (1k images) from a larger colle
 - Metadata validation: checks for a `filename` column (auto-derives from alternatives if possible)
 - Embeddings integration: loads premade CLIP/SigLIP/Vision Transformer style CSVs
 - File index: builds or loads a CSV map `filename → full_path`
-- FAISS search: cosine (normalized IP) or L2
+- FAISS search: Cosine (standard) or Euclidean 
 - Stacked view: ranked vertical preview with similarity scores and labels.
 - Annotation function with csv output
 - Projection: UMAP/t-SNE with coloring by (query/nearest/other) or cosine gradient
-- Filters: include/exclude per column and optional `pandas.query()` expression
-- Image display: multiple backends (Streamlit path, imageio, OpenCV, PIL, raw bytes)
+- Filters: include/exclude per column
+- Image display
 - Checkpointing: save/load app state
 
 ## Missing Features
