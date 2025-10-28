@@ -36,7 +36,7 @@ The included Examples folder contains a test set (1k images) from a larger colle
 
 ## Trying it out
 The ReWiz.py is naturally set up to run the testset in the Examples folder, try out the testset or change embeddings, metadata and images to your own. 
-**Important notes**: The column: *filename* is central to the code and is what FAISS indexes the images after, and is the link between metadata, images and embeddings. All image-names must be different, and you can't use the same named columns. 
+**Important notes**: The column: *filename* is central to the code and is what FAISS indexes the images after, and is the link between metadata, images and embeddings. All image-filenames must be different, and you can't use the same named columns. 
 
 ## Installation (Windows)
 ```bash
