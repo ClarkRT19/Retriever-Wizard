@@ -1,19 +1,21 @@
 # 🧙‍♂️ Retriever Wizard [WIP]
-A simple tool to visualize images using premade embeddings and metadata, incl. a small testset of a 1000 images.  
+A small Streamlit app built for my PhD project (IKK, Aarhus University) to make crosscollection-comparisions, via visual similarity using precomputed embeddings and metadata.
+The primary use is an adaptive research tool, created for my analytical process. It reflects how I use my data and my research workflow. You’re welcome to study or adapt it, but expect revisions and tweaks.
 
 ## Overview
-Retriever Wizard is a Streamlit tool for AI-based exploration of large image collections. It compares images by using visual similarity (with precomputed embeddings) and provides fast nearest-neighbor search, ranked inspection, annotation marker, and simple 2D projections (UMAP or t-SNE). Typical uses include:
-- Exploring thematically similar images
-- Spotting gaps and inconsistencies in metadata
-- Annotating the images for metadata crossexamination 
-- Producing projection plots for research and reporting
+Retriever Wizard loads a metadata CSV and an embeddings CSV (CLIP/SigLIP/Vision Transformer-style). It builds a fast FAISS index for nearest-neighbour search, lets you rank and annotate results, and makes simple 2D projections for communication.
 
-It is developed for cross-institutional analysis of educational wall charts and artworks, but applicable to any large-scale image dataset with embeddings.  
+What it helps with:
+- find visually similar charts (nearest neighbours)
+- inspect clusters and outliers
+- annotate candidates for cross-examination
+- make simple 2D projections (UMAP/t-SNE) for slides/reports
 
 ## Tetset 
-The Images and Metadata used are part of a larger collection of Education Wallcharts, owned by DPU (The Danish School of Education) and Aarhus University. The digitized charts are publicly available from The Danish Royal Library and the images chosen as exampledata are free from copyright. 
-The Images and Metadata have been processed as part of a ongoing PhD project, where also the Embeddings have been produced as part of the project, the Embeddings have been made with: google/siglip2-giant-opt-patch16-384.[https://huggingface.co/google/siglip2-giant-opt-patch16-384]
-
+The included Examples folder contains a test set (1k images) from a larger collection of educational wall charts.
+Ownership: Danish School of Education (DPU), Aarhus University.
+Source: Digitized by The Royal Danish Library; the selected example images are free of copyright - Hyperlink to source included in the metadata.csv.
+Research context: Processed during an ongoing PhD project. Embeddings were produced with google/siglip2-giant-opt-patch16-384.
 
 ## Features
 - Metadata validation: checks for a `filename` column (auto-derives from alternatives if possible)
@@ -33,7 +35,7 @@ The Images and Metadata have been processed as part of a ongoing PhD project, wh
   
 
 ## Trying it out
-The app.py is naturally set up to run the testset in the Examples folder, try out the testset or change embeddings, metadata and images to your own. 
+The ReWiz.py is naturally set up to run the testset in the Examples folder, try out the testset or change embeddings, metadata and images to your own. 
 **Important notes**: The column: *filename* is central to the code and is what FAISS indexes the images after, and is the link between metadata, images and embeddings. All image-names must be different, and you can't use the same named columns. 
 
 ## Installation (Windows)
