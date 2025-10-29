@@ -14,7 +14,7 @@ What it helps with:
 ## Test set 
 The included Examples folder contains a test set (1k images) from a larger collection of educational wall charts.
 - Original collection ownership: Danish School of Education (DPU), Aarhus University.
-- Image source: Digitized by The Royal Danish Library; the selected example images are free of copyright per: https://digitalesamlinger.kb.dk/images/billed/2010/okt/billeder/subject22066/da/
+- Image source: Digitized by The Royal Danish Library; the selected example images are free of copyright, and a link to the original upload of the image is available in the metadata.csv.
 - Research context: Processed during my ongoing PhD project. Embeddings were produced with google/siglip2-giant-opt-patch16-384.
 
 ## Features
