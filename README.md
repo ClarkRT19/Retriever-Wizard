@@ -1,21 +1,21 @@
 # 🧙‍♂️ Retriever Wizard [WIP]
-A small Streamlit app built for my PhD project (IKK, Aarhus University) to make crosscollection-comparisions, via visual similarity using precomputed embeddings and metadata.
+A small Streamlit app built for my PhD project (In a collaboration between Aarhus University and Museum Give) to make crosscollection-comparisions, via visual similarity using precomputed embeddings and metadata.
 The primary use is an adaptive research tool, created for my analytical process. It reflects how I use my data and my research workflow. You’re welcome to study or adapt it, but expect revisions and tweaks.
 
 ## Overview
 Retriever Wizard loads a metadata CSV and an embeddings CSV (CLIP/SigLIP/Vision Transformer-style). It builds a fast FAISS index for nearest-neighbour search, lets you rank and annotate results, and makes simple 2D projections for communication.
 
 What it helps with:
-- find visually similar charts (nearest neighbours)
-- inspect clusters and outliers
-- annotate candidates for cross-examination
-- make simple 2D projections (UMAP/t-SNE) for slides/reports
+- Find visually similar charts (nearest neighbours)
+- Inspecting similar images between different collections.
+- Annotate image-candidates for cross-examination
+- Make simple 2D projections (UMAP/t-SNE) for slides/reports
 
-## Tetset 
+## Test set 
 The included Examples folder contains a test set (1k images) from a larger collection of educational wall charts.
-- Ownership: Danish School of Education (DPU), Aarhus University.
-- Source: Digitized by The Royal Danish Library; the selected example images are free of copyright - Hyperlink to source included in the metadata.csv.
-- Research context: Processed during an ongoing PhD project. Embeddings were produced with google/siglip2-giant-opt-patch16-384.
+- Original collection ownership: Danish School of Education (DPU), Aarhus University.
+- Image source: Digitized by The Royal Danish Library; the selected example images are free of copyright per: https://digitalesamlinger.kb.dk/images/billed/2010/okt/billeder/subject22066/da/
+- Research context: Processed during my ongoing PhD project. Embeddings were produced with google/siglip2-giant-opt-patch16-384.
 
 ## Features
 - Metadata validation: checks for a `filename` column (auto-derives from alternatives if possible)
@@ -36,7 +36,7 @@ The included Examples folder contains a test set (1k images) from a larger colle
 
 ## Trying it out
 The ReWiz.py is naturally set up to run the testset in the Examples folder, try out the testset or change embeddings, metadata and images to your own. 
-**Important notes**: The column: *filename* is central to the code and is what FAISS indexes the images after, and is the link between metadata, images and embeddings. All image-names must be different, and you can't use the same named columns. 
+**Important notes**: The column: *filename* is central to the code and is what FAISS indexes the images after, and is the link between metadata, images and embeddings. All image-filenames must be different, and you can't use the same named columns. 
 
 ## Installation (Windows)
 ```bash
