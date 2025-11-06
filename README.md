@@ -1,5 +1,5 @@
 # 🧙‍♂️ Retriever Wizard [WIP]
-A small Streamlit app built for my PhD project (In a collaboration between Aarhus University and Museum Give) to make crosscollection-comparisions, via visual similarity using precomputed embeddings and metadata.
+A small Streamlit app built for my PhD project (In a collaboration between Aarhus University and Museum Give) to make crosscollection-comparisons, via visual similarity using precomputed embeddings and metadata.
 The primary use is an adaptive research tool, created for my analytical process. It reflects how I use my data and my research workflow. You’re welcome to study or adapt it, but expect revisions and tweaks.
 
 ## Overview
